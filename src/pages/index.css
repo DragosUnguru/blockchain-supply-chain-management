@@ -1,0 +1,187 @@
+:root {
+    --color-bg-primary: #202020;
+    --color-bg-secondary: #191919;
+    --color-primary: #2bde6a;
+    --color-secondary: #b91d82;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: var(--color-bg-primary);
+}
+
+/* Anchors (mainly hyperlinks) */
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    word-break: break-all;
+}
+
+/* Image displays */
+.media-object {
+    border-radius: 50%;
+}
+
+/* Boxed elements */
+.box {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-bg-secondary);
+    text-align: center;
+    border-radius: 24px;
+    color: white;
+    word-break: break-all;
+}
+
+/* Description lists */
+dl {
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-bg-secondary);
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+dt {
+    float: left;
+    width: 25%;
+    background: var(--color-bg-secondary);
+    padding: 0;
+    margin: 0px;
+}
+dd {
+    float: left;
+    width: 75%;
+    background: var(--color-bg-secondary);
+    padding: 0;
+    margin: 0;
+}
+
+/* Boxed headings */
+.box h1 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.box h2 {
+    padding-top: 40px;
+    color: white;
+    font-weight: 250;
+}
+
+.box ul,
+.box input[type="checkbox"] {
+    padding-top: 5px;
+    margin-left: 60px;
+    padding: auto;
+    text-align: left;
+    color: white;
+    font-weight: 175;
+}
+
+/* Forms */
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--color-primary);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: var(--color-secondary);
+}
+
+/* Username autofill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--color-bg-secondary) inset !important;
+}
+
+/* Username autofill text */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+/* Buttons */
+.file-input::-webkit-file-upload-button {
+    display: none;
+}
+
+.box input[type="submit"],
+.custom-btn,
+.box input[type="file"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--color-secondary);
+    padding: 14px 10px;
+    margin-top: 30px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.file-input {
+    text-align-last: center;
+}
+.box input[type="submit"]:hover,
+.custom-btn:hover,
+.box input[type="file"] {
+    background: var(--color-secondary);
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid var(--color-secondary);
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th, td {
+    padding: 10px;
+}
