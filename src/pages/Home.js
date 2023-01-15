@@ -73,8 +73,8 @@ export default function Home() {
 
     return (
         <div class="box">
-            <h3>Your account: {account} </h3>
-            <h3>Your email: {email} </h3>
+            <h4>Your account: {account} </h4>
+            <h4>Your email: {email} </h4>
             <button class="custom-btn"
                 onClick={() => {
                     localStorage.removeItem("email");
@@ -86,7 +86,7 @@ export default function Home() {
                 Log out
             </button>
             <div>
-                <h1>My Products</h1>
+                <h3>My Products</h3>
                 {(ownedProducts === undefined || ownedProducts.length) === 0 ? "No products owned" :
                     <table>
                         <tr>
@@ -105,7 +105,7 @@ export default function Home() {
                 }
             </div>
             <div>
-                <h1>Create Product</h1>
+                <h3>Create Product</h3>
                 <form onSubmit={handleCreateProduct}>
                     <input
                         type="text"
@@ -121,7 +121,7 @@ export default function Home() {
                 </form>
             </div>
             <div>
-                <h1>Transfer Products</h1>
+                <h3>Transfer Products</h3>
                 <form onSubmit={handleTransfer}>
                     <input
                         type="text"
